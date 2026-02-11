@@ -571,7 +571,7 @@
                     </div>
                 </div>
                 <div class="puzzle-reveal-text" id="puzzleRevealText">
-                    <p class="complete-line">...Te amo mi vida❤️</p>
+                    <p class="complete-line">...vos me completás.</p>
                     <p class="valentine-question">¿Querés ser mi San Valentín?</p>
                     <button type="button" class="yes-only-btn" id="yesBtn">Sí ❤️</button>
                 </div>
@@ -635,8 +635,8 @@
         }
 
         function scramblePuzzle() {
-            // Scramble with 60 random valid moves for a real challenge
-            for (let i = 0; i < 60; i++) {
+            // Súper fácil: solo 2 movimientos
+            for (let i = 0; i < 2; i++) {
                 const emptyIndex = currentState.indexOf(EMPTY_PIECE);
                 const validMoves = getValidMoves(emptyIndex);
                 const randomMove = validMoves[Math.floor(Math.random() * validMoves.length)];
